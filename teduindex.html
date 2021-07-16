@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./cssReset.css">
+  <title>Document</title>
+  <style>
+  .bgarea {
+      margin: 30px auto;
+      background-color: rgb(75, 35, 38);
+      width: 1200px;
+      height: 440px;
+      box-shadow: 0 0 10px 1px darkgray;
+      border-radius: 10px;
+    }
+  .bgarea .first {
+      border-top-left-radius: 10px;
+    }
+  .bgarea .end {
+      border-bottom-left-radius: 10px;
+    }
+
+    ul li{     
+      width: 204px;
+      height: 62px;
+      padding-left: 20px;
+      line-height: 62px;
+      text-align: left;
+      border: 1px solid #1C252D;
+      border-top: 0;
+      color: #999999;
+      background-color: #292D32;
+      cursor: pointer;    
+    }
+    ul {
+      position: relative;
+    }
+    ul li>a {
+      position: relative;
+    }
+    ul li>a::after{
+      content: "   ＞";
+      position: absolute;
+      left: 170px;
+      font-size: 12px;
+
+    }
+    ul li .neirong {
+      position: absolute;
+      top:0;
+      left: 224px;
+      width: 750px;
+      height: 440px;
+      color: black;
+      display: none;
+      cursor: default; 
+    }
+    ul li .neirong .d1 {
+      margin: auto;
+      width: 700px;
+      height: 99px;
+      line-height: 99px;
+      text-align: left;
+      color: #999999;
+      border-bottom: 1px solid #999999;
+    }
+    ul li .neirong a {      
+      width: 150px;
+      height: 80px;
+      line-height: 80px;
+      text-align: left;
+      padding-left: 15px;
+      border-radius: 20px;
+      cursor: pointer; 
+    }
+    .begin~a:hover{
+      color: rgb(33, 122, 196);
+     }
+    ul li .neirong .begin {
+      display: inline-block;
+      /* margin: 0 auto; */
+      width: 90px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center ;
+      color: black;      
+      padding: 5px;
+      background-color: #EAEAEA;
+    }
+
+
+    ul li .neirong .d2 {
+      margin: auto;
+      width: 700px;
+      height: 99px;
+      line-height: 99px;
+      text-align: left;
+      color: #999999;
+      top: 90px;
+      
+    }
+    ul li .neirong .d3 {  
+      margin: auto;
+      width: 700px;
+      height: 99px;
+      line-height: 99px;
+      text-align: left;
+      color: #999999;
+      top: 100px;
+    }  
+    ul li .neirong .d {  
+      position: absolute;
+      left: 0;      
+      width: 750px;
+      height: 120px;
+      border-top: 5px solid rgb(208, 208, 208,0.5);      
+    }
+    ul li .neirong .d .ad-box {       
+      width: 160px;
+      height: 120px;
+      line-height: 68px;
+      text-align: center;
+      /* background-color: red; */
+      float: left;
+    }
+    ul li .neirong .d img { 
+      margin: 20px auto;
+      width: 120px;
+      height: 68px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 1px #999999;
+      cursor: pointer; 
+    }
+    ul li .neirong .d .txt {  
+      margin: 15px auto;
+      width: 215px;
+      height: 120px;
+      line-height: 20px;
+      text-align: left;
+      /* background-color: red; */
+      float: left;       
+    }
+    ul li .neirong .d .txt p,h3{
+      cursor: pointer;
+    }
+    li:hover .neirong {
+      display: block;
+      background-color: white;
+      /* color: black; */
+    }  
+    li:hover{
+      background-color: white;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      color: black;
+    }
+    .haveboder {
+      border-bottom: 1px solid #999999 !important;
+    }
+    .noboder {
+      border-bottom: 0 !important;
+    }
+    .font-weight {
+      font-size: 14px;
+      color: black;
+    }
+    .hand {cursor: pointer;}    
+  </style>
+</head>
+<body>
+
+  <div class="bgarea">
+    <ul>
+      <li class="first"><a>前端/后端开发</a>
+        <div class="neirong">
+          <div class="d1">
+            <div class="first-box">
+            <a class="begin hand">前端开发</a></div>
+            <a class="hand">Web前端</a>
+          </div>
+          <div class="d2">
+            <a class="begin hand">后端开发</a>
+            <a>Java</a><a>Python</a><a>JAVA培优</a><a>Go区块链</a><a>C#/.Net</a><a>C/C++</a><a>PHP</a></div>
+          <div class="d3">
+            <a class=""></a></div>
+          <div class="d">
+            <div class="ad-box">
+            <img src="./img/11.jpg" alt=""></div>
+            <div class="txt">
+            <h3 class="font-weight">JAVA高手加薪课</h3>
+             <p>达内重磅推出的JAVA高手加薪课...</p></div>         
+          <div class="ad-box">
+            <img src="./img/12.jpg" alt=""></div>
+            <div class="txt">
+            <h3 class="font-weight">Java软件架构课</h3>
+             <p>由传统架构师迈向互联网架构师！</p></div>            
+          </div>
+          </div>
+      </li>
+      <li ><a>大数据/云计算</a>
+        <div class="neirong">
+        <div class="d1">
+          <a class="begin">大数据</a><a>大数据</a>
+        </div>
+        <div class="d2">
+          <a class="begin">云计算</a><a>linux云计算</a>
+        </div>
+        <div class="d3">
+          <a class=""></a></div>
+        <div class="d">
+          <div class="ad-box">
+          <img src="./img/21.jpg" alt=""></div>
+          <div class="txt">
+          <h3 class="font-weight">大数据+实战高薪课</h3>
+           <p>达内在线大数据培优课</p></div>         
+        <div class="ad-box">
+          <img src="./img/22.jpg" alt=""></div>
+          <div class="txt">
+          <h3 class="font-weight">Linux云计算系列实战训练营2.0</h3>
+           <p>专为培养新一代“Linux运维/Py...</p></div>
+        </div> 
+      </div>
+      </li>
+      <li><a>移动开发/游戏</a>
+        <div class="neirong">
+          <div class="d1">
+            <a class="begin">移动开发</a><a>小程序</a><a>Android</a><a>iOS</a>
+          </div>
+          <div class="d2">
+            <a class="begin">游戏</a><a>Unity3D</a>
+          </div>
+          <div class="d3">
+            <a class=""></a></div>
+            <div class="d">
+              <div class="ad-box">
+              <img src="./img/31.png" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">Unity3D入门之脚本开发</h3>
+               <p>Unity3D入门之脚本开发</p></div>         
+            <div class="ad-box">
+              <img src="./img/32.png" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">Java软件架构课</h3>
+               <p>由传统架构师迈向互联网架构师！</p></div>
+            </div> 
+        </div>
+      </li>
+      <li><a>物联网/测试</a>
+        <div class="neirong">
+          <div class="d1">
+            <a class="begin">物联网</a><a>嵌入式</a>
+          </div>
+          <div class="d2">
+            <a class="begin">软件测试</a><a>软件测试</a>
+          </div>
+          <div class="d3">
+            <a class=""></a></div>
+            <div class="d">
+              <div class="ad-box">
+              <img src="./img/41.png" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">嵌入式之开发实战</h3>
+               <p>开发实战</p></div>         
+            <div class="ad-box">
+              <img src="./img/42.png" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">设计测试用例的方法</h3>
+               <p>设计测试用例的方法</p></div>
+            </div> 
+          </div>
+      </li>
+      <li><a>营销/产品/运营</a>
+        <div class="neirong">
+          <div class="d1">
+            <a class="begin">营销</a><a>网络营销</a><a>信息流</a>
+          </div>
+          <div class="d2 haveboder">
+            <a class="begin">产品</a><a>产品经理</a>
+          </div>
+          <div class="d3">
+            <a class="begin">运营</a><a>新媒体运营</a><a>高级电商运营</a><a>网商运营</a>
+          </div>
+          <div class="d">
+            <div class="ad-box">
+            <img src="./img/51.png" alt=""></div>
+            <div class="txt">
+            <h3 class="font-weight">一周上手小程序</h3>
+             <p>本系列课程抓住了小程序开发的...</p></div>         
+          <div class="ad-box">
+            <img src="./img/52.png" alt=""></div>
+            <div class="txt">
+            <h3 class="font-weight">SEM搜索引擎营销</h3>
+             <p>SEM搜索引擎营销</p></div>
+          </div> 
+        </div>
+      </li>
+      <li><a>数字艺术</a>
+        <div class="neirong">
+          <div class="d1 noboder">
+            <a class="begin">数字艺术</a><a>UED设计</a><a>UID设计</a><a>BVD商业视觉设计</a><a>CAD</a><a>视频剪辑</a><a>平面设计</a><a>商业插画</a>
+          </div>
+          <div class="d2">
+            <a class=""></a></div>
+          <div class="d3">
+            <a class=""></a></div>
+            <div class="d">
+              <div class="ad-box">
+              <img src="./img/61.jpg" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">达内在线商业插画培优课</h3>
+               <p>专为UI设计师打造，提升原创设...</p></div>         
+            <div class="ad-box">
+              <img src="./img/62.jpg" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">平面设计极速入职课</h3>
+               <p>0基础设计小白快速具备入职能力</p></div>
+            </div> 
+        </div>
+      </li>
+      <li class="end"><a>其他职业课程</a>
+        <div class="neirong">
+          <div class="d1 noboder">
+            <a class="begin ">其他职业课程</a><a>网络运维与安全</a><a>ACC</a><a>HR</a><a>就业指导</a><a>商业办公软件</a>
+          </div>
+          <div class="d2">
+            <a class=""></a></div>
+          <div class="d3">
+            <a class=""></a></div>
+            <div class="d">
+              <div class="ad-box">
+              <img src="./img/71.jpg" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">华为高级认证HCIE</h3>
+               <p>提升7大实力，做ICT领域专家...</p></div>         
+            <div class="ad-box">
+              <img src="./img/72.jpg" alt=""></div>
+              <div class="txt">
+              <h3 class="font-weight">总账会计180天实战训练营</h3>
+               <p>上市公司，真账实训，打造会计...</p></div>
+            </div> 
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

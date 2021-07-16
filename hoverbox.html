@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./cssReset.css">
+  <title>Document</title>
+  <style>
+    ul {
+      margin: 30px auto;
+      width: 750px;
+      height: 450px;
+      /* background-color: black; */
+      float: left;
+      overflow: hidden;
+    }
+    ul li {
+      width: 360px;
+      height: 96px;
+      border: 1px solid red;
+      background-color: white;
+      float: left;
+      margin-top: 5px;
+    }
+    ul li .left {
+      width: 360px;
+    }
+    ul li .icon {
+      display: block;
+      width: 40px;
+      height: 40px; 
+      margin: 16px 159px 0;
+      /* background-color: darkgreen; */
+      background-image: url(./img/home-page-icons.png);
+      background-repeat: no-repeat;
+    }
+    ul li .text {
+      display: block;
+      margin: auto;
+      padding-top: 10px;
+      text-align: center;
+      color: #D74D47;
+    }
+    .position11 {
+      background-position: -160px 0 ;
+    }
+    .position12 {
+      background-position: -240px 0;
+    }
+    .position21 {
+      background-position: 0 0;
+    }
+    .position22 {
+      background-position: -40px 0;
+    }
+    .position31 {
+      background-position: -120px 0;
+    }
+    .position32 {
+      background-position:-200px 0;
+    }
+    .position41 {
+      background-position:-320px 0;
+    }
+    .position42 {
+      background-position:-280px 0;
+    }
+    li:hover {
+      background-color: #D74D47;
+    }
+    li:hover span[class*="icon"]{
+      background-position-y:-40px ;
+    }
+    li:hover span[class="text"]{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="center">
+<ul>
+  <li>
+    <a class="left">
+      <span class="icon position11"></span>
+      <span class="text">远程医疗</span>
+    </a>
+  </li>
+  <li>
+    <a class="right">
+      <span class="icon position12"></span>
+      <span class="text">在线导医</span>
+    </a>
+  </li>
+  <li>
+    <a class="left">
+      <span class="icon position21"></span>
+      <span class="text">疫情防控</span>
+    </a>
+  </li>
+  <li>
+    <a class="right">
+      <span class="icon position22"></span>
+      <span class="text">专家门诊时刻表</span>
+    </a>
+  </li>
+  <li>
+    <a class="left">
+      <span class="icon position31"></span>
+      <span class="text">就诊须知</span>
+    </a>
+  </li>
+  <li>
+    <a class="right">
+      <span class="icon position32"></span>
+      <span class="text">院外门诊</span>
+    </a>
+  </li>
+  <li>
+    <a class="left">
+      <span class="icon position41"></span>
+      <span class="text">党建专栏</span>
+    </a>
+  </li>
+  <li>
+    <a class="right">
+      <span class="icon position42"></span>
+      <span class="text">人才招聘</span>
+    </a>
+  </li>
+</ul>
+</div>
+</body>
+</html>
